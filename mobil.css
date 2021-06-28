@@ -5,11 +5,11 @@
 }
 @font-face {
   font-family: anna;
-  src: url(../Fonts/kawaii/anna-clara.ttf) format("truetype");
+  src: url(fonts/anna-clara.ttf) format("truetype");
 }
 @font-face {
   font-family: maha;
-  src: url(../Fonts/titulos/Maharlika-Regular.ttf) format("truetype");
+  src: url(fonts/Maharlika-Regular.ttf) format("truetype");
 }
 
 * {
