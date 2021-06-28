@@ -1,0 +1,60 @@
+:root {
+  /* colores */
+  --color-titulo: #c45b48;
+  --color-fondo: #f3e9e0;
+}
+@font-face {
+  font-family: anna;
+  src: url(../Fonts/kawaii/anna-clara.ttf) format("truetype");
+}
+@font-face {
+  font-family: maha;
+  src: url(../Fonts/titulos/Maharlika-Regular.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url(https://images7.alphacoders.com/307/thumb-1920-307095.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body > div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+h1 {
+  display: inline-block;
+  font-family: anna;
+  color: #ff7700;
+  line-height: 63px;
+  font-size: 4.6rem;
+  font-weight: 200;
+  padding-left: 10px;
+}
+main {
+  height: 700px;
+}
+h2 {
+  font-family: maha;
+  color: var(--color-titulo);
+}
+section {
+  background-color: #f3e9e0;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 20px;
+}
+p {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+}
