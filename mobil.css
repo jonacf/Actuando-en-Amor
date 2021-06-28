@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: maha;
-  src: url(fonts/Maharlika-Regular.ttf) format("truetype");
+  src: url(./fonts/Maharlika-Regular.ttf) format("truetype");
 }
 
 * {
