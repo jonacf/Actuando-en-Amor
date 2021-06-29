@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="video.js/video-js.min.css" />
+    <script src="video.js/video.min.js"></script>
+    <link rel="stylesheet" href="mobil.js" />
     <link rel="stylesheet" href="mobil.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Mulish:wght@200&display=swap"
@@ -29,9 +32,14 @@
           <section>
             <h2>Actividades</h2>
             <p></p>
+            <div class="contenedor">
+              <video class="fm-video video-js" controls id="fm-video">
+                <source src="video/actuando-en-amor.mp4" type="video/mp4" />
+              </video>
+            </div>
           </section>
           <section class="conocenos">
-            <h2>Cónocenos</h2>
+            <h2>Conócenos</h2>
             <ul class="conocenos__list">
               <li>Jerson Filios</li>
               <li>Dayana Macen</li>
@@ -42,7 +50,7 @@
               <li>Junior Rojas</li>
               <li>Nicolle Mora</li>
               <li>Sandy Jines</li>
-              <li>Mariel </li>
+              <li>Mariel</li>
               <li>Jonathan Castillo</li>
             </ul>
           </section>
@@ -54,5 +62,10 @@
         </div>
       </footer>
     </div>
+    <script>
+      var reproductor = videojs("fm-video", {
+        fluid: true,
+      });
+    </script>
   </body>
 </html>

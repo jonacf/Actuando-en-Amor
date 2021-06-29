@@ -58,7 +58,8 @@ p {
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
 }
-.conocenos__list>li {
+
+.conocenos__list > li {
   list-style: none;
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
