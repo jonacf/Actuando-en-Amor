@@ -59,6 +59,21 @@ p {
   font-size: 1.5rem;
 }
 
+.fm-video {
+  width: 100%;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+.fm-video,
+.video-js .vjs-control-bar {
+  background-color: rgb(243 233 224);
+  color: rgb(205 111 72);
+}
+.video-js .vjs-load-progress div {
+  background-color: var(--color-fondo);
+}
+.video-js .vjs-play-progress {
+  background-color: var(--color-titulo);
+}
 .conocenos__list > li {
   list-style: none;
   font-family: "Mulish", sans-serif;
