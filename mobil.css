@@ -61,7 +61,6 @@ p {
 
 .fm-video {
   width: 100%;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 .fm-video,
 .video-js .vjs-control-bar {
@@ -77,6 +76,9 @@ p {
 .vjs-big-play-centered .vjs-big-play-button {
   background: transparent;
   color: transparent;
+  border: none;
+}
+.video-js .vjs-play-control .vjs-icon-placeholder:active {
   border: none;
 }
 .conocenos__list > li {
