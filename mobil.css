@@ -74,6 +74,11 @@ p {
 .video-js .vjs-play-progress {
   background-color: var(--color-titulo);
 }
+.vjs-big-play-centered .vjs-big-play-button {
+  background: transparent;
+  color: transparent;
+  border: none;
+}
 .conocenos__list > li {
   list-style: none;
   font-family: "Mulish", sans-serif;
