@@ -21,18 +21,31 @@
 html {
   font-size: 62.5%;
 }
-body {
-  background-image: url(https://images7.alphacoders.com/307/thumb-1920-307095.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
 body > div {
   display: flex;
   flex-direction: column;
-  margin: 20px;
 }
-
+header {
+  background-image: url(https://images7.alphacoders.com/307/thumb-1920-307095.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: cover;
+}
+.titulo-caja {
+  padding: 20px;
+  min-width: 320px;
+  padding-bottom: 40px;
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0%) 0%,
+    rgb(215 210 187) 100%
+  );
+}
+main {
+  padding: 0 20px;
+  background-color: #d7d2bb;
+}
 h1 {
   display: inline-block;
   font-family: anna;
@@ -42,12 +55,10 @@ h1 {
   font-weight: 200;
   padding-left: 10px;
 }
-main {
-  height: 700px;
-}
 h2 {
   font-family: maha;
   color: var(--color-titulo);
+  letter-spacing: 2px;
 }
 section {
   background-color: var(--color-fondo);
@@ -55,11 +66,17 @@ section {
   padding: 15px;
   border-radius: 20px;
 }
+section:nth-child(3) {
+  background: linen;
+}
 p,
 h4,
 figcaption {
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
+}
+h4 {
+  text-align: center;
 }
 .contenedor {
   margin-top: 10px;
@@ -98,20 +115,18 @@ figcaption {
   font-size: 1.5rem;
 }
 article {
-  background: rgb(205 111 72);
+  background: #b5bb8c;
   border-radius: 20px;
   padding: 10px;
   padding-top: 1px;
   margin-top: 20px;
 }
-img {
-  border-radius: 20px;
-  width: 210px;
-  object-fit: cover;
+.article__activity {
+  background: #cd6f48;
+  padding: 10px;
 }
-
 .carrusel {
-  background: #c45b48;
+  background: #e9b788;
   padding: 10px;
   border-radius: 10px;
   margin-top: 10px;
@@ -126,7 +141,35 @@ img {
 }
 .carrusel__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   scroll-snap-align: center;
   align-self: center;
   margin-right: 10px;
+  min-width: 227px;
+  max-width: 400px;
+  min-height: 350px;
+  background-color: #fb7d49;
+  border-radius: 20px;
+  padding: 8px;
+}
+img {
+  border-radius: 20px;
+  width: 100%;
+}
+.section__activity {
+  background: #cd6f48;
+  padding: 0;
+}
+.section__activity h2 {
+  color: var(--color-fondo);
+  padding-left: 10px;
+}
+.description {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
