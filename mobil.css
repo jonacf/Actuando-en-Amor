@@ -2,6 +2,7 @@
   /* colores */
   --color-titulo: #c45b48;
   --color-fondo: #f3e9e0;
+  --color-naranja-tenue: rgb(205 111 72);
 }
 @font-face {
   font-family: anna;
@@ -49,16 +50,23 @@ h2 {
   color: var(--color-titulo);
 }
 section {
-  background-color: #f3e9e0;
-  margin-top: 20px;
+  background-color: var(--color-fondo);
+  margin-top: 10px;
   padding: 15px;
   border-radius: 20px;
 }
-p {
+p,
+h4,
+figcaption {
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
 }
-
+.contenedor {
+  margin-top: 10px;
+}
+.contenedor video {
+  border-radius: 20px;
+}
 .fm-video {
   width: 100%;
 }
@@ -81,8 +89,45 @@ p {
 .video-js .vjs-play-control .vjs-icon-placeholder:active {
   border: none;
 }
-.conocenos__list > li {
+.nosotros__list {
+  margin-top: 10px;
+}
+.nosotros__list > li {
   list-style: none;
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
+}
+
+article {
+  background: rgb(205 111 72);
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 1px;
+  margin-top: 20px;
+}
+img {
+  border-radius: 20px;
+  width: 210px;
+  object-fit: cover;
+}
+
+.carrusel {
+  background: #c45b48;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.carrusel__container {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding: 10px 0;
+}
+.carrusel__item {
+  position: relative;
+  scroll-snap-align: center;
+  align-self: center;
+  margin-right: 10px;
 }
