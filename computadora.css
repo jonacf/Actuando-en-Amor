@@ -3,6 +3,7 @@ h4 {
   font-size: 2rem;
 }
 figcaption,
-p {
+p,
+.derechos {
   font-size: 1.7rem;
 }
