@@ -1,8 +1,9 @@
 :root {
   /* colores */
   --color-titulo: #c45b48;
-  --color-fondo: #f3e9e0;
+  --color-fondo-cajas: #f3e9e0;
   --color-naranja-tenue: rgb(205 111 72);
+  --color-fondo: #d7d2bb;
 }
 @font-face {
   font-family: anna;
@@ -36,15 +37,11 @@ header {
   padding: 20px;
   min-width: 320px;
   padding-bottom: 40px;
-  background: linear-gradient(
-    to bottom,
-    rgb(0 0 0 / 0%) 0%,
-    rgb(215 210 187) 100%
-  );
+  background: linear-gradient(to bottom, #00000000, #d7d2bb);
 }
 main {
   padding: 0 20px;
-  background-color: #d7d2bb;
+  background-color: var(--color-fondo);
 }
 h1 {
   display: inline-block;
@@ -61,7 +58,7 @@ h2 {
   letter-spacing: 2px;
 }
 section {
-  background-color: var(--color-fondo);
+  background-color: var(--color-fondo-cajas);
   margin-top: 10px;
   padding: 15px;
   border-radius: 20px;
@@ -71,12 +68,18 @@ section:nth-child(3) {
 }
 p,
 h4,
-figcaption {
+figcaption,
+.derechos {
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
 }
+p {
+  line-height: 24px;
+  padding-top: 5px;
+}
 h4 {
   text-align: center;
+  color: #822a2f;
 }
 .contenedor {
   margin-top: 10px;
@@ -93,7 +96,7 @@ h4 {
   color: rgb(205 111 72);
 }
 .video-js .vjs-load-progress div {
-  background-color: var(--color-fondo);
+  background-color: var(--color-fondo-cajas);
 }
 .video-js .vjs-play-progress {
   background-color: var(--color-titulo);
@@ -119,7 +122,8 @@ article {
   border-radius: 20px;
   padding: 10px;
   padding-top: 1px;
-  margin-top: 20px;
+  margin: 20px auto;
+  max-width: 768px;
 }
 .article__activity {
   background: #cd6f48;
@@ -149,12 +153,12 @@ article {
   margin-right: 10px;
   min-width: 227px;
   max-width: 400px;
-  min-height: 350px;
+  min-height: 380px;
   background-color: #fb7d49;
   border-radius: 20px;
   padding: 8px;
 }
-img {
+.carrusel__item img {
   border-radius: 20px;
   width: 100%;
 }
@@ -163,7 +167,7 @@ img {
   padding: 0;
 }
 .section__activity h2 {
-  color: var(--color-fondo);
+  color: var(--color-fondo-cajas);
   padding-left: 10px;
 }
 .description {
@@ -172,4 +176,51 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.integrante-caja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.integrante {
+  width: 100px;
+  padding-top: 13px;
+}
+.persona img {
+  border-radius: 50%;
+  width: 100%;
+}
+.nombre {
+  text-align: center;
+}
+
+footer {
+  padding: 0 20px;
+  background-color: var(--color-fondo);
+}
+.footer_redes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+sup {
+  font-size: 1rem;
+}
+.img__item {
+  margin: 10px;
+}
+.img__item img {
+  width: 50px;
+}
+.derechos {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-align: end;
 }
