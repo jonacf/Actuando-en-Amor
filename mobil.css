@@ -72,6 +72,7 @@ figcaption,
 .derechos {
   font-family: "Mulish", sans-serif;
   font-size: 1.5rem;
+  text-align: center;
 }
 p {
   line-height: 24px;
@@ -145,16 +146,14 @@ article {
 }
 .carrusel__item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   scroll-snap-align: center;
   align-self: center;
   margin-right: 10px;
   min-width: 227px;
   max-width: 400px;
   min-height: 380px;
-  background-color: #fb7d49;
+  min-height: 391px;
+  background-color: #ce6337;
   border-radius: 20px;
   padding: 8px;
 }
@@ -171,11 +170,12 @@ article {
   padding-left: 10px;
 }
 .description {
-  display: flex;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 21px;
+  padding-left: 7px;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -212,6 +212,9 @@ footer {
 }
 sup {
   font-size: 1rem;
+}
+.img-especial {
+  margin-top: 80px;
 }
 .img__item {
   margin: 10px;
