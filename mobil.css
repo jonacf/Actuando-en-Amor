@@ -215,6 +215,7 @@ sup {
 }
 .img__item {
   margin: 10px;
+  text-align: center;
 }
 .img__item img {
   width: 50px;
