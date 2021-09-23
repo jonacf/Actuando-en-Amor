@@ -101,6 +101,7 @@ header {
   min-width: 320px;
   padding: 20px;
   padding-bottom: 40px;
+  text-align: center;
   background: linear-gradient(to bottom, #00000000, #d7d2bb);
 }
 
@@ -116,7 +117,7 @@ h1 {
   line-height: 63px;
   font-size: 4.6rem;
   font-weight: 200;
-  color: #ff7700;
+  color: #c45b48;
 }
 
 h2 {
