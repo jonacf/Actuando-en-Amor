@@ -1,4 +1,3 @@
-# actuando-en-amor
 #🧡💛💚  Actuando en Amor 🖤🤎💜💙
 ------------
 > Actuando en amor es una organización no gubernamental (ONG) que se dedica a contribuir en la sociedad como agentes de solidaridad. Nos encontramos en Perú-Lima-VillaElSalvador.
